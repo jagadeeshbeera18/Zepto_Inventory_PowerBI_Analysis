@@ -1,0 +1,15 @@
+﻿Category,Listings,Distinct_Product_Names,Avg_Discount_Percent,Discounted_Listings,Discounted_Share_Percent,Avg_MRP_INR,Avg_Selling_Price_INR,Avg_Savings_INR,In_Stock_Listings,In_Stock_Rate_Percent,Out_Of_Stock_Listings
+Beverages,129,121,7.16,82,63.6,118.71,103.73,14.98,101,78.3,28
+Biscuits,147,133,8.24,94,63.9,59.49,52.78,6.71,105,71.4,42
+Chocolates & Candies,388,366,8.32,256,66.0,155.73,141.08,14.65,343,88.4,45
+Cooking Essentials,514,477,7.16,375,73.0,156.54,140.83,15.71,450,87.5,64
+"Dairy, Bread & Batter",129,121,7.16,82,63.6,118.71,103.73,14.98,101,78.3,28
+Fruits & Vegetables,93,89,15.46,93,100.0,47.01,39.84,7.17,87,93.5,6
+Health & Hygiene,97,90,8.05,72,74.2,159.18,145.86,13.32,84,86.6,13
+Home & Cleaning,194,184,5.7,144,74.2,152.15,141.45,10.71,175,90.2,19
+Ice Cream & Desserts,388,366,8.32,256,66.0,155.73,141.08,14.65,343,88.4,45
+"Meats, Fish & Eggs",63,59,11.03,49,77.8,187.29,164.1,23.19,51,81.0,12
+Munchies,514,477,7.16,375,73.0,156.54,140.83,15.71,450,87.5,64
+Paan Corner,344,308,6.25,210,61.0,207.12,189.74,17.38,323,93.9,21
+Packaged Food,388,366,8.32,256,66.0,155.73,141.08,14.65,343,88.4,45
+Personal Care,344,308,6.25,210,61.0,207.12,189.74,17.38,323,93.9,21

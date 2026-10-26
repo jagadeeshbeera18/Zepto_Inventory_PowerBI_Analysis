@@ -1,0 +1,20 @@
+// Import Zepto_Pricing_Data.csv as a table named Zepto.
+Catalog Listings = COUNTROWS(Zepto)
+Distinct Product Names = DISTINCTCOUNT(Zepto[Product])
+Category Labels = DISTINCTCOUNT(Zepto[Category])
+Average Discount % = AVERAGE(Zepto[Discount_Percent])
+Discounted Listings = CALCULATE([Catalog Listings], Zepto[Discount_Percent] > 0)
+Discounted Listing Share = DIVIDE([Discounted Listings], [Catalog Listings])
+Average MRP (INR) = AVERAGE(Zepto[MRP_INR])
+Average Selling Price (INR) = AVERAGE(Zepto[Selling_Price_INR])
+Average Savings (INR) = AVERAGE(Zepto[Savings_INR])
+In-Stock Listings = CALCULATE([Catalog Listings], Zepto[Out_Of_Stock] = FALSE())
+Out-of-Stock Listings = CALCULATE([Catalog Listings], Zepto[Out_Of_Stock] = TRUE())
+In-Stock Rate = DIVIDE([In-Stock Listings], [Catalog Listings])
+Deep Discount Listings (>20%) = CALCULATE([Catalog Listings], Zepto[Discount_Percent] > 20)
+
+// Product/category analysis measures. Product is a name, not a unique product ID.
+Largest Listed Discount % = MAX(Zepto[Discount_Percent])
+Largest Savings (INR) = MAX(Zepto[Savings_INR])
+
+Recommended visuals: KPI cards; Category by Average Discount % bar chart; Discount_Band by Catalog Listings column chart; MRP_INR vs Selling_Price_INR scatter by Product and Category; product price table. Add slicers for Category, Out_Of_Stock, Discount_Band.
